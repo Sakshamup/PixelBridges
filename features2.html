@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alabay Guardian - Shepherd of the Steppes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #2E2B3F;
+            color: white;
+            background-image: url('Alabay heritage prev gradient.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 10px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 58px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: left;
+            font-size: 35px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #56e764;
+            text-transform: uppercase;
+        }
+
+        p {
+            text-align: start;
+            font-size: 23px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .play-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #56e764;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .play-button:hover {
+            background-color: #39d550;
+        }
+
+        .game-preview {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .preview-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .preview-card {
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .preview-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .features-section {
+            margin-top: 50px;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 10px;
+            color: white;
+        }
+
+        .features-section h2 {
+            font-size: 32px;
+            color: #39d550;
+            margin-bottom: 20px;
+        }
+
+        .features-section ul {
+            list-style-type: none;
+            padding-left: 0;
+            line-height: 1.8;
+        }
+
+        .features-section ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .features-section span {
+            color: #39d550;
+        }
+
+        .challenge-modes {
+            margin-top: 20px;
+        }
+
+        .challenge-modes li {
+            font-size: 18px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .exit-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .exit-button:hover {
+            background-color: #3D3B54;
+        }
+    </style>
+    <script>
+        function goToIndex() {
+            window.location.href = 'index.html'; 
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <h1>Alabay Heritage</h1>
+            <h2>The Lost Adventure</h2>
+            <p>Take on the role of the legendary Alabay on a quest to uncover the ancient secrets of its ancestors.</p>
+            <button class="play-button">Play</button>
+        </div>
+
+        <div class="game-preview">
+            <h3>Game Preview</h3>
+            <div class="preview-container">
+                <div class="preview-card">
+                    <img style="height: 170px; width: 250px; border: 2px solid white;" src="overview.png" alt="Explore during the day">
+                </div>
+                <div class="preview-card">
+                    <img style="border: 2px solid white;" src="Abilities 2.png" alt="Protect and investigate at night">
+                </div>
+                <div class="preview-card">
+                    <img style="border: 2px solid white;" src="image 3 alabay guard 2.png" alt="Call in help to fight threats">
+                </div>
+                <div class="preview-card">
+                    <img style="height: 170px; width: 250px;" src="locations preview.png" alt="Call in help to fight threats">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-section">
+        <h2>Features</h2>
+        <ul>
+            <li>Explore a variety of landscapes, including <span>mountains</span>, <span>forests</span>, <span>deserts</span>, and <span>ancient ruins</span>.</li>
+            <li>Use the Alabay’s <span>abilities</span> to solve <span>puzzles</span> that involve moving objects, activating mechanisms, or finding hidden clues.</li>
+            <li>Discover relics that tell the story of the Alabay’s ancestors, each piece contributing to a larger narrative about the breed's role in ancient history.</li>
+            <li>Unlock new skills and abilities for the Alabay, enhancing its capacity to explore and solve puzzles.</li>
+        </ul>
+        <h3>Challenge Modes:</h3>
+        <ul class="challenge-modes">
+            <li><b style="color: #39d550;">Time Trials:</b> Compete in special timed challenges where the Alabay must navigate through complex mazes or complete puzzles within a time limit.</li>
+            <li><b style="color: #39d550;">Exploration Mastery:</b> A mode that rewards players for fully exploring every nook and cranny of the game’s world, uncovering all secrets.</li>
+        </ul>
+        <div class="buttons">
+            <button class="play-button">Play</button>
+            <button class="exit-button" onclick="goToIndex()">Exit</button> <!-- Added onclick event -->
+        </div>
+    </div>
+</body>
+</html>
